@@ -20,4 +20,8 @@ Replace **B** with the column where you want to find the duplicates.
 
 If you want to highlight the first instance with a different color you can use the following formula (with a higher priority)
 
-`=COUNTIF($H1:$H;$H1)>1`
+`=AND( COUNTIF($H:$H; $H1) >1 ; COUNTIF($H$1:$H1; $H1) =1 )`
+
+and for the rest
+
+`=AND( COUNTIF($H:$H; $H1) >1 ; COUNTIF($H$1:$H1; $H1) > 1 )`
