@@ -14,7 +14,7 @@ Replace B with the column
 
 `=COUNTIF($B:$B;$B1)>1`
 
-**PT-BR** = `CONT.SE()`
+- PT-BR= `CONT.SE()`
 
 Replace **B** with the column where you want to find the duplicates.
 
@@ -25,3 +25,9 @@ If you want to highlight the first instance with a different color you can use t
 and for the rest
 
 `=AND( COUNTIF($H:$H; $H1) >1 ; COUNTIF($H$1:$H1; $H1) > 1 )`
+
+## Misc
+
+### Strings
+
+[Count cells containing string in any position](https://stackoverflow.com/questions/17152704/google-spreadsheet-count-if-contains-a-string)
